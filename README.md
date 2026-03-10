@@ -612,8 +612,13 @@ POST /api/auth/register
 
 **Login**
 ```json
+**Admin**
 POST /api/auth/login
-{ "email": "alice@example.com", "password": "Alice@1234" }
+{ "email": "admin@example.com", "password": "Admin@123456" }
+
+
+**User**
+{ "email": "dharshanlak2005@gmail.com", "password": "Dharshan@2005" }
 
 → 200 {
   "accessToken": "eyJhbGci...",
@@ -754,16 +759,15 @@ docker-compose up --build
 
 ---
 
-## 📄 License
+**Output Images**
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+**Login**
+![Img]()
+<img width="1920" height="904" alt="Screenshot 2026-03-10 180920" src="https://github.com/user-attachments/assets/112a8d66-909d-44ae-ac5f-5b494b93d0c2" />
+
+
+
 
 ---
 
-<div align="center">
 
-Built with ❤️ using **React** · **Node.js** · **MongoDB** · **JWT** · **Passport.js**
-
-⭐ **Star this repo if it helped you!** ⭐
-
-</div>
