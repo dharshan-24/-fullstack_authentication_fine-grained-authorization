@@ -711,43 +711,7 @@ document.cookie  # refreshToken should NOT appear ✅
 
 ---
 
-## 🚀 Deployment
 
-### Production Checklist
-
-```bash
-# 1. Set environment
-NODE_ENV=production
-
-# 2. Use strong secrets (minimum 64 characters)
-JWT_ACCESS_SECRET=$(openssl rand -hex 32)
-JWT_REFRESH_SECRET=$(openssl rand -hex 32)
-
-# 3. Enable HTTPS (Secure cookie flag activates automatically)
-
-# 4. Update CORS origin to your real domain
-CLIENT_URL=https://yourdomain.com
-
-# 5. Update Google OAuth callback URL in Google Console
-GOOGLE_CALLBACK_URL=https://api.yourdomain.com/api/auth/google/callback
-
-# 6. Use MongoDB Atlas for managed database
-MONGO_URI=mongodb+srv://user:pass@cluster.mongodb.net/secureauth
-```
-
-### Deploy with Docker
-
-```bash
-# Build and start all services
-docker-compose up --build
-
-# Services:
-# Backend  → http://localhost:5000
-# Frontend → http://localhost:5173
-# MongoDB  → mongodb://localhost:27017
-```
-
----
 
 ## 🤝 Contributing
 
